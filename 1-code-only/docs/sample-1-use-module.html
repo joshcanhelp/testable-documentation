@@ -49,13 +49,13 @@
             </div>
             
             <div class="content"><div class='highlight'><pre><span class="hljs-keyword">const</span> payload = {
-    <span class="hljs-attr">aud</span>: <span class="hljs-string">&quot;AUDIENCE_ID&quot;</span>,
-    <span class="hljs-attr">iss</span>: <span class="hljs-string">`https://example.com/`</span>,
-    <span class="hljs-attr">sub</span>: <span class="hljs-string">&quot;SUBJECT_ID&quot;</span>
+  <span class="hljs-attr">aud</span>: <span class="hljs-string">&quot;AUDIENCE_ID&quot;</span>,
+  <span class="hljs-attr">iss</span>: <span class="hljs-string">`https://example.com/`</span>,
+  <span class="hljs-attr">sub</span>: <span class="hljs-string">&quot;SUBJECT_ID&quot;</span>,
 };
 
 jwt.sign(payload, <span class="hljs-built_in">this</span>.tokenSecret, {
-    <span class="hljs-attr">expiresIn</span>: <span class="hljs-built_in">this</span>.tokenExpiresIn,
+  <span class="hljs-attr">expiresIn</span>: <span class="hljs-built_in">this</span>.tokenExpiresIn,
 });</pre></div></div>
             
         </li>

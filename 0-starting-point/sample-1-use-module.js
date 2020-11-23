@@ -1,11 +1,13 @@
 const jwt = require("jsonwebtoken");
 
-const payload = {
-  aud: "AUDIENCE_ID",
-  iss: `https://example.com/`,
-  sub: "SUBJECT_ID",
-};
+module.exports = function makeToken() {
+  const payload = {
+    aud: "AUDIENCE_ID",
+    iss: `https://example.com/`,
+    sub: "SUBJECT_ID",
+  };
 
-jwt.sign(payload, this.tokenSecret, {
-  expiresIn: this.tokenExpiresIn,
-});
+  return jwt.sign(payload, "TOKEN_SECRET", {
+    expiresIn: "1 day",
+  });
+};

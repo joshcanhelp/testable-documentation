@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 module.exports = function makeToken() {
   const payload = {
     aud: "AUDIENCE_ID",
-    iss: `https://example.com/`,
+    iss: "https://example.com/",
     sub: "SUBJECT_ID",
   };
 
